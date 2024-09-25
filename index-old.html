@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chromecast Receiver</title>
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+      #iframeContainer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+      iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+    </style>
+    <script type="text/javascript"
+      src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
+    </script>
+    <!-- Cast Debug Logger -->
+    <script src="//www.gstatic.com/cast/sdk/libs/devtools/debug_layer/caf_receiver_logger.js"></script>
+</head>
+<body>
+  <div id="iframeContainer"></div>
+  <script src="js/receiver.js" type="module"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ context.setLoggerLevel(cast.framework.LoggerLevel.DEBUG);
 const iframeContainer = document.getElementById('iframeContainer');
 
 // Custom message namespace
-const NAMESPACE = 'urn:x-cast:com.example.livetokendisplay';
+const NAMESPACE = "urn:x-cast:es.offd.tokenviewer";
 
 context.addCustomMessageListener(NAMESPACE, function(event) {
     const url = event.data.url;
